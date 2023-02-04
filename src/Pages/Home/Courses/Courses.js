@@ -66,7 +66,7 @@ const Courses = () => {
         ],
     };
     return (
-        <div className='max-w-6xl mx-auto my-20'>
+        <div className='max-w-6xl mx-auto my-20 px-7 md:px-0'>
             <div className='pb-7'>
                 <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
                     Our Authentic <span class="text-blue-500 ">Courses</span>

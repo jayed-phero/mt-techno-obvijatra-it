@@ -120,7 +120,7 @@ const CoursesHome = () => {
 
 
     return (
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-6xl mx-auto px-7 md:px-0'>
             <Slider {...settings}>
                 {
                     courses.map(course =>
