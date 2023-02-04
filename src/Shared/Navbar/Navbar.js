@@ -65,7 +65,7 @@ const Navbar = () => {
                         <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Carrer</a>
                     </div>
 
-                    <a class="block h-10 px-5 py-2 mt-4 text-sm text-center text-gray-700 capitalize transition-colors duration-300 transform border rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-0 hover:bg-gray-100 lg:w-auto background-radial-gradient text-white font-semibold " href="#">
+                    <a class="block h-10 px-5 py-2 mt-4 text-sm text-center outline-none border-none capitalize transition-colors duration-300 transform border rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-0 hover:bg-gray-100 lg:w-auto background-radial-gradient text-white font-semibold " href="#">
                         Our Courses
                     </a>
                 </div>
