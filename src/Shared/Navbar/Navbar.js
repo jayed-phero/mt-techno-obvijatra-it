@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import { AuthContext } from '../../../Context/AuthProvider';
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
     // }
     return (
         <div className={`shadow-lg z-50 px-6 py-3 md:py-5 w-full print:hidden ${nav && 'navbar-active ease-in duration-700'}`}>
-            <nav class=" max-w-6xl mx-auto lg:flex lg:justify-between lg:items-center">
+            <nav class=" max-w-7xl mx-auto lg:flex lg:justify-between lg:items-center">
                 <div class="flex items-center justify-between">
                     <div>
                         <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Brand</a>
@@ -56,12 +56,12 @@ const Navbar = () => {
                 </div>
 
                 {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" -- > */}
-                <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-xl md:bg-transparent md:dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'}`}>
+                <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white   md:bg-transparent md:dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'}`}>
                     <div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0 font-semibold">
-                        <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
+                        <Link to='/' class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" >Home</Link>
                         <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">About Us</a>
                         <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Success Hitory</a>
-                        <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Contact</a>
+                        <Link to='/contact' class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500">Contact</Link>
                         <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Carrer</a>
                     </div>
 

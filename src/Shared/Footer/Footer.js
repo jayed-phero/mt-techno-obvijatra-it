@@ -65,9 +65,8 @@ const Footer = () => {
                     <hr class="my-6 border-gray-400 md:my-10 dark:border-gray-700" />
 
                     <div class="flex flex-col items-center justify-between sm:flex-row">
-                        <a href="#">
-                            <img class="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt="" />
-                        </a>
+                        <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Brand</a>
+
 
                         <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
                     </div>
