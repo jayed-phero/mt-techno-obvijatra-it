@@ -1,0 +1,19 @@
+.logo{
+    height: 61px;
+    width: 61px;
+}
+
+.text{
+    line-height: 21px;
+}
+
+.text h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.text p{
+    font-size: 17px;
+    font-weight: 700;
+}
+

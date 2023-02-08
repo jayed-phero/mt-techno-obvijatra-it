@@ -73,48 +73,44 @@ const CoursesHome = () => {
     const courses = [
         {
             icon: <i class="fa-solid fa-network-wired"></i>,
-            bgColor: '',
+            bgColor: 'bg-red-200',
             title: "Computer Basic"
         },
         {
             icon: <i class="fa-solid fa-laptop"></i>,
-            bgColor: '',
+            bgColor: 'bg-orange-200',
+            Color: 'text-orange-500',
             title: "Microsoft Office"
         },
         {
             icon: <i class="fa-solid fa-database"></i>,
-            bgColor: '',
+            bgColor: 'bg-yellow-200',
+            Color: 'text-yellow-500',
             title: "Excel Crush"
         },
         {
             icon: <i class="fa-solid fa-train"></i>,
-            bgColor: '',
+            bgColor: 'bg-lime-200',
+            Color: 'text-lime-500',
             title: "Microsoft Office"
         },
         {
             icon: <i class="fa-solid fa-floppy-disk"></i>,
-            bgColor: '',
+            bgColor: 'bg-orange-200',
+            Color: 'text-orange-500',
             title: "Excel Crush"
         },
         {
             icon: <i class="fa-solid fa-tv"></i>,
-            bgColor: '',
+            bgColor: 'bg-sky-200',
+            Color: 'text-sky-500',
             title: "Data Entry"
         },
         {
-            icon: <i class="fa-solid fa-keyboard"></i>,
-            bgColor: '',
-            title: "Web Development"
-        },
-        {
-            icon: <i class="fa-solid fa-window-restore"></i>,
-            bgColor: '',
-            title: "Fignma Basic"
-        },
-        {
-            icon: <i class="fa-solid fa-house-laptop"></i>,
-            bgColor: '',
-            title: "Basic Engeniaring"
+            icon: <i class="fa-solid fa-tv"></i>,
+            bgColor: 'bg-indigo-200',
+            Color: 'text-indigo-500',
+            title: "Data Entry"
         }
     ]
 
@@ -124,9 +120,9 @@ const CoursesHome = () => {
             <Slider {...settings}>
                 {
                     courses.map(course =>
-                        <div className='border-2 rounded-2xl w-full shadow-xl h-44 flex flex-col items-center justify-center'>
+                        <div className={`border-2 rounded-2xl w-full shadow-xl h-44 flex flex-col items-center justify-center ${course.bgColor}`}>
                             <div className='flex flex-col items-center justify-center h-full w-full'>
-                                <h3 className='text-5xl'>{course.icon}</h3>
+                                <h3 className={`text-5xl ${course.Color}`}>{course.icon}</h3>
                                 <h1 className='text-xl font-semibold pt-3'>{course.title}</h1>
                             </div>
                         </div>

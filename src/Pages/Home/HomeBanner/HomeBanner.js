@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomeBanner.css';
 
 const HomeBanner = () => {
@@ -20,12 +21,12 @@ const HomeBanner = () => {
                                     adipisci tenetur repudiandae rerum quos.
                                 </p>
                                 <div className='flex items-center gap-7 flex-col md:flex-row'>
-                                    <a class="block h-10 md:h-12 flex items-center justify-center px-5 py-2 mt-4 text-lg text-center capitalize transition-colors duration-300 transform border rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-7 hover:bg-gray-100 lg:w-44 background-radial-gradient text-white font-semibold outline-none border-none" href="#">
+                                    <Link to='/contact' class="block h-10 md:h-12 flex items-center justify-center px-5 py-2 mt-4 text-lg text-center capitalize transition-colors duration-300 transform border rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-7 hover:bg-gray-100 lg:w-44 background-radial-gradient text-white font-semibold outline-none border-none" >
                                         <i class="fa-solid fa-book-open-reader pr-3"></i>  Contact Us
-                                    </a>
-                                    <a class="block h-10 md:h-12 flex items-center justify-center px-5 py-2 mt-4 text-lg text-center capitalize transition-colors duration-300 transform border rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-7 hover:bg-transparent lg:w-auto background-radial-gradient text-white font-semibold outline-none border-none" href="#">
+                                    </Link>
+                                    <Link to='/' class="block h-10 md:h-12 flex items-center justify-center px-5 py-2 mt-4 text-lg text-center capitalize transition-colors duration-300 transform border rounded-md dark:hover:bg-gray-700 dark:text-white lg:mt-7 hover:bg-transparent lg:w-auto background-radial-gradient text-white font-semibold outline-none border-none" >
                                         <i class="fa-solid fa-book-open-reader pr-3"></i>  Join Free Class
-                                    </a>
+                                    </Link>
                                     
                                 </div>
                             </div>

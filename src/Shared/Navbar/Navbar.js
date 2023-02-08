@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import { AuthContext } from '../../../Context/AuthProvider';
+import logo from '../../assets/logo.png';
+import './Navbar.css'
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
 
-    // const { user, logout } = useContext(AuthContext)
     const [menuOpen, setMenuOpen] = useState(false)
     const [nav, setNav] = useState(false)
     const navigate = useNavigate()
@@ -23,20 +23,20 @@ const Navbar = () => {
         window.addEventListener("scroll", activateNav)
     }, [])
 
-    // const handleLogout = () => {
-    //     logout()
-    //         .then(() => {
-    //             navigate('/')
-    //         })
-    // }
     return (
         <div className={`transition ${nav && 'fixed top-0 w-full ease-in duration-500 bg-white z-50'}`}>
 
-            <div className={`shadow-lg z-50 px-6 py-3 md:py-5 w-full print:hidden ${nav? 'md:py-3 ' : 'md:py-5'}`}>
+            <div className={`shadow-lg z-50 px-6 py-3  w-full print:hidden ${nav? ' ' : 'md:py-'}`}>
                 <nav class=" max-w-7xl mx-auto lg:flex lg:justify-between lg:items-center">
                     <div class="flex items-center justify-between">
                         <div>
-                            <a class="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Brand</a>
+                            <div class="flex items-center gap-1.5 ">
+                                <img className='h-12 w-12 rounded-full logo' src={logo}/>
+                                <div className='text'>
+                                    <h3 className='uppercase text-green-800'>Ovijatra</h3>
+                                    <p className='uppercase text-gray-800'>IT Institute</p>
+                                </div>
+                            </div>
                         </div>
 
                         {/* <!-- Mobile menu button --> */}
@@ -58,11 +58,11 @@ const Navbar = () => {
                     </div>
 
                     {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" -- > */}
-                    <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white   md:bg-transparent md:dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'}`}>
+                    <div className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white uppercase  md:bg-transparent md:dark:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'}`}>
                         <div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0 font-semibold">
                             <Link to='/' class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" >Home</Link>
-                            <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">About Us</a>
-                            <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Success Hitory</a>
+                            <Link class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" to='/aboutus'>About Us</Link>
+                            <Link class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" to='/successstudent'>Success Hitory</Link>
                             <Link to='/contact' class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500">Contact</Link>
                             <a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Carrer</a>
                         </div>
