@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
 function SampleNextArrow(props) {
@@ -98,9 +99,9 @@ const Courses = () => {
                                     </div>
                                     <div className='flex items-center pt-5 justify-between'>
                                         <h3 className='text-sm sm:text-lg font-semibold  '>Course Fee : <span className='block'>$5000</span></h3>
-                                        <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                        <Link to='/coursedetails/1'> <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                             See More
-                                        </button>
+                                        </button></Link>
                                     </div>
                                 </div>
                             </div>
