@@ -8,7 +8,7 @@ const HomeBanner = () => {
         <div class="">
             <section class="text-gray-800 background-radial-gradient w-full ">
                 <div class="px-6 md:px-12 text-center lg:text-left">
-                    <div class="max-w-7xl h-full mx-auto py-20">
+                    <div class="max-w-7xl h-full mx-auto py-10 md:py-20">
                         <div class="grid lg:grid-cols-2 gap-12 flex items-center">
                             <div class="mt-12 lg:mt-0">
                                 <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight mb-12 text-bg" >

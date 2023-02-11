@@ -1,4 +1,5 @@
 import React from 'react';
+import CTA from '../../CTA/CTA';
 import Company from '../Company/Company';
 import Courses from '../Courses/Courses';
 import CoursesHome from '../Courses/CoursesHome';
@@ -15,6 +16,7 @@ const Home = () => {
             <OurTeam/>
             <Company/>
             <LearningSystem/>
+            <CTA/>
         </div>
     );
 };

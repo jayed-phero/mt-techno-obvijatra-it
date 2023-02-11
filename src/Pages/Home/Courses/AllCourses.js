@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ScrollToTop from '../../../Shared/Scrool-to-top';
 
 const AllCourses = () => {
     return (
         <div className='max-w-7xl mx-auto my-20 px-7 md:px-0 bg-gray-100 rounded-3xl py-9'>
+        <ScrollToTop/>
             <div className='pb-7'>
                 <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
                     Our Authentic <span class="text-blue-500 ">Courses</span>
@@ -34,9 +37,9 @@ const AllCourses = () => {
                                 </div>
                                 <div className='flex items-center pt-5 justify-between'>
                                     <h3 className='text-sm sm:text-lg font-semibold  '>Course Fee : <span className='block'>$5000</span></h3>
-                                    <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                   <Link to='/coursedetails/2'> <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                         See More
-                                    </button>
+                                    </button></Link>
                                 </div>
                             </div>
                         </div>

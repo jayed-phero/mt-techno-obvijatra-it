@@ -1,12 +1,26 @@
 import React from 'react';
+import { toast } from 'react-hot-toast';
+import ScrollToTop from '../../../Shared/Scrool-to-top';
 
 const Contact = () => {
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+    //     toast.success("Form Submitted")
+    // }
     return (
         <div>
             <section class="bg-white dark:bg-gray-900 my-20">
+                <ScrollToTop/>
+                <div className='max-w-7xl px-6 mx-auto'>
+                    <p class="font-medium text-blue-500 dark:text-blue-400">Contact us</p>
+
+                    <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">Get in touch</h1>
+
+                    <p class="mt-3 text-gray-500 dark:text-gray-400">Our friendly team is here to chat with you.</p>
+                </div>
                 <div class="max-w-7xl grid gap-8 px-6 py-12 mx-auto lg:grid-cols-2 grid-cols-1">
-                    <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
-                        <form>
+                    <div class="p-4 py-6 rounded-lg bg-gray-100 dark:bg-gray-800 md:p-8">
+                        <form >
                             <div class="-mx-2 md:items-center md:flex">
                                 <div class="flex-1 px-2">
                                     <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">First Name</label>
@@ -29,7 +43,7 @@ const Contact = () => {
                                 <textarea class="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                             </div>
 
-                            <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                            <button type='submit' class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 Send message
                             </button>
                         </form>
